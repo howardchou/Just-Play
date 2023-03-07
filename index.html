@@ -109,6 +109,7 @@
 	}
 
     #onlyCarousel {  /*edit*/
+        display: flex;
         padding-left: 150px;
 		width: 870px;
 		height: 432px;
@@ -117,17 +118,13 @@
         height: 432px;
     }
     #onlyCarousel .carousel-inner img{  /*edit*/
-        width: 100%;
+        width: 50%;
         height: 432px;      
 		padding-top: 30px;   
 	} 
     #banner img{
-        width: 450px;
-        height: 400px;      
+        width: 50%;  
         position: relative;
-        bottom: 400px;
-        right: 100px;
-        float: right;
         object-fit: contain;
     }
     .item,.carousel-caption, .carousel-margin {
@@ -141,7 +138,7 @@
     }
     #myCarousel {
         top: 20px;
-        width: 1190px;
+        width: 1200px;
         left: 150px;
     }  
     .carousel-margin{
@@ -161,8 +158,6 @@
         bottom: auto;    
     }
     #myCarousel .carousel-inner {
-        width: 1190px;
-        bottom: 350px;    
     }
     #myCarousel .carousel-margin  img{
         /* margin: 5px; */
@@ -241,8 +236,8 @@
     
     
 </script>
-<div class="navigation"></div>
 <div id="container">
+    <div class="navigation"></div>
 <!--chunyi edit-->
     <div id="dashboard">
         <a href="./gameList.html?category=Action">  <!--動作遊戲網址-->
@@ -280,45 +275,44 @@
     <!-- 廣告區塊-->
     <div id="onlyCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="game/img/Fir_Per/garden.jpg" style="display: inline-block;" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="game/img/racing/disney.jpg" style="display: inline-block;" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="game/img/sports/gg.jpg" style="display: inline-block;" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal" id="select">
-                <h1>隨機推薦</h1><br><p style="font-size: 20px">點選幻燈片，隨機推薦一款遊戲。</p>
-            </button>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#onlyCarousel" style="left: 140px;" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#onlyCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-    <!-- 活動區塊 -->
-    <div id="banner" class="banner-wrapper">
-        <a class="up-banner" href="./celebrating.html"> <!-- 放活動連結 -->
-            <div class="up-banner-image">
-                <img src="./game/img/activity/A1.jpg" alt="">
+                <div class="carousel-item active">
+                <img src="game/img/Fir_Per/garden.jpg" style="display: inline-block;" class="d-block w-100" alt="...">
             </div>
-        </a>
+                <div class="carousel-item">
+                <img src="game/img/racing/disney.jpg" style="display: inline-block;" class="d-block w-100" alt="...">
+            </div>
+                <div class="carousel-item">
+                <img src="game/img/sports/gg.jpg" style="display: inline-block;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal" id="select">
+                    <h1>隨機推薦</h1><br><p style="font-size: 20px">點選幻燈片，隨機推薦一款遊戲。</p>
+                </button>
+            </div>
+                
+            <button class="carousel-control-prev" type="button" data-bs-target="#onlyCarousel" style="left: 140px;" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#onlyCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+            <!-- 活動區塊 -->
+            <div id="banner" class="banner-wrapper" href="./celebrating.html">
+                <a class="up-banner" href="./celebrating.html"> <!-- 放活動連結 -->
+                    <div class="up-banner-image">
+                        <img src="./game/img/activity/A1.jpg" alt="">
+                    </div>
+                </a>
+            </div>
     </div>
 
     <!-- 推薦遊戲區塊 -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div id="recommend" style="background-color: #dcdcdc; height: 300px;" >
+        <div id="recommend" style="background-color: #dcdcdc" height="100%">
             <span id="recommend-text">推薦遊戲</span>
-
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="carousel-margin">
